@@ -93,7 +93,7 @@
             height: 180px;
             flex-shrink: 0;
             border-radius: 6px;
-            overflow: hidden;
+            overflow: hidden; /* Empêche l'image agrandie de sortir du cadran */
         }
 
         .shop-card img {
@@ -101,6 +101,12 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            transition: transform 0.4s ease; /* Animation fluide du zoom */
+        }
+
+        /* Effet d'agrandissement au survol de la carte ou de l'image */
+        .shop-card:hover img {
+            transform: scale(1.1); /* Ajustez (ex: 1.15 pour plus grand) */
         }
 
         /* Texte au milieu */
@@ -247,7 +253,7 @@
             <!-- Article 3 -->
             <div class="shop-card">
                 <div class="card-img-container">
-                    <img src="shop01003.png" alt="Article 3">
+                    <img src="shop01002.png" alt="Article 3">
                 </div>
                 <div class="card-content">
                     <h2 class="card-title">Option 3 - Tanga</h2>
@@ -266,13 +272,13 @@
             <!-- Article 4 -->
             <div class="shop-card">
                 <div class="card-img-container">
-                    <img src="shop01004.png" alt="Article 4">
+                    <img src="shop01002.png" alt="Article 4">
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title">Option 4 - Nuisette</h2>
+                    <h2 class="card-title">Nuisette</h2>
                     <p class="card-description">Camisole bleu marine en dentelle et noeud</p>
                     <ul class="options-list">
-                         <li>Envoi rapide et discret</li>
+                        <li>Envoi rapide et discret</li>
                         <li>Mises à jour régulières</li>
                     </ul>
                 </div>
@@ -282,16 +288,16 @@
                 </div>
             </div>
 
-                        <!-- Article 5 -->
+            <!-- Article 5 -->
             <div class="shop-card">
                 <div class="card-img-container">
                     <img src="shop01005.png" alt="Article 5">
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title">Option 5 - Bas résille</h2>
+                    <h2 class="card-title">Bas résille</h2>
                     <p class="card-description">Bas résille noirs et noeud</p>
                     <ul class="options-list">
-                         <li>Envoi rapide et discret</li>
+                        <li>Envoi rapide et discret</li>
                         <li>Mises à jour régulières</li>
                     </ul>
                 </div>
@@ -300,7 +306,7 @@
                     <a href="#" class="btn-order">Porté 48h</a>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
